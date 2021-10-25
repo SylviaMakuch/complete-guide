@@ -1,15 +1,15 @@
-import logo from './wave.svg';
-import './App.css';
+import logo from "./wave.svg";
+import "./App.css";
+import ExpenseItem from "./components/Expenseitem";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header"> Hello is it me you're looking for?
+      <header className="App-header">
+        {" "}
+        Hello is it me you're looking for?
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Get started
-        </p>
-       
+       <ExpenseItem></ExpenseItem>
       </header>
     </div>
   );
