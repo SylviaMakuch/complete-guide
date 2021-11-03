@@ -11,7 +11,7 @@ export const Expenses = (props) => {
       <ExpensesFilter onChange={(e) => setFilterYear(e)} />
       {props.items.map(({ id, title, amount, date }, index) => {
         return (
-          <ExpenseItem id={id} title={title} amount={amount} date={date} />
+          <ExpenseItem id={id} title={title} amount={amount} date={date} key={index} />
         );
       })}
     </div>
