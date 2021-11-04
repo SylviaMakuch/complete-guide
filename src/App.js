@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Expenses } from "./components/Expenses";
 import NewExpense from "./components/NewExpense";
+
 const initialExpenses = [
   {
     id: 'e1',
@@ -27,7 +28,7 @@ function App() {
   const [expenses, setExpenses]= useState(initialExpenses);
 
   const addExpenseHandler =(expense) =>{
-    setExpenses(perviousYear => {
+    setExpenses((perviousYear) => {
       return[expenses,...perviousYear]
     });
   };

@@ -3,9 +3,9 @@ import "./NewExpense.css";
 import ExpenseForm from "./ExpenseForm.js";
 
 const NewExpense = (props) => {
-    const saveDataHandler = (enteredData) => {
+    const saveDataHandler = (enteredExpenseData) => {
         const expenseData = {
-            ...enteredData,
+            ...enteredExpenseData,
             id: Math.random().toString()
         };
     props.onAddExpense(expenseData);
