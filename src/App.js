@@ -29,7 +29,7 @@ function App() {
 
   const addExpenseHandler =(expense) =>{
     setExpenses((perviousYear) => {
-      return[expenses,...perviousYear]
+      return[...perviousYear,expense]
     });
   };
 
