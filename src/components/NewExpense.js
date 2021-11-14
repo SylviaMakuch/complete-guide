@@ -16,7 +16,7 @@ const NewExpense = (props) => {
     };
 
   return (
-    <div>
+    <div className='new-expense'>
       {!isFormOpen && <button type="button" onClick={() => setIsFormOpen(!isFormOpen)}> Add Expense </button>}
       {isFormOpen && <ExpenseForm onSaveData={saveDataHandler} onCancel={() => setIsFormOpen(false)}/>}
     </div>
